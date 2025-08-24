@@ -1,0 +1,6 @@
+service : {
+  follow: (text, text) -> (); // follower, followee
+  unfollow: (text, text) -> (); // follower, followee
+  get_followers: (text) -> (vec text) query;
+  get_following: (text) -> (vec text) query;
+} 

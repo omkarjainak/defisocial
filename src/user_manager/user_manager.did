@@ -1,0 +1,14 @@
+type UserProfile = record {
+  id: text;
+  username: text;
+  name: text;
+  bio: text;
+  avatar_url: opt text;
+  cover_url: opt text;
+};
+service : {
+  register_user: (text, text, text, text, opt text, opt text) -> (UserProfile);
+  update_profile: (text, text, text, opt text, opt text) -> (UserProfile);
+  get_user: (text) -> (opt UserProfile) query;
+  seed_demo_users: () -> ();
+} 

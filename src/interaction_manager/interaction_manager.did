@@ -1,0 +1,14 @@
+type Comment = record {
+  id: text;
+  post_id: text;
+  author: text;
+  content: text;
+  timestamp: nat64;
+};
+service : {
+  like_post: (text, text) -> (); // user, post_id
+  unlike_post: (text, text) -> ();
+  get_likes: (text) -> (vec text) query; // post_id -> users
+  add_comment: (text, text, text) -> (Comment); // user, post_id, content
+  get_comments: (text) -> (vec Comment) query; // post_id
+} 

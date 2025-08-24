@@ -1,0 +1,8 @@
+[workspace]
+members = [
+    "src/user_manager",
+    "src/post_manager",
+    "src/social_graph",
+    "src/interaction_manager"
+]
+resolver = "2"

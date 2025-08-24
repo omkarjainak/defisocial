@@ -1,0 +1,12 @@
+type Post = record {
+  id: text;
+  author: text;
+  content: text;
+  timestamp: nat64;
+  version: nat8; // New field to force reload
+};
+service : {
+  add_post: (text, text) -> (variant { ok: Post; err: text });
+  fetch_posts: () -> (vec Post) query;
+  seed_demo_posts: () -> ();
+} 

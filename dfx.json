@@ -1,0 +1,51 @@
+{
+  "canisters": {
+    "user_manager": {
+      "type": "rust",
+      "package": "user_manager",
+      "main": "src/user_manager/src/lib.rs",
+      "candid": "src/user_manager/user_manager.did"
+    },
+    "post_manager": {
+      "type": "rust",
+      "package": "post_manager",
+      "main": "src/post_manager/src/lib.rs",
+      "candid": "src/post_manager/post_manager.did"
+    },
+    "social_graph": {
+      "type": "rust",
+      "package": "social_graph",
+      "main": "src/social_graph/src/lib.rs",
+      "candid": "src/social_graph/social_graph.did"
+    },
+    "interaction_manager": {
+      "type": "rust",
+      "package": "interaction_manager",
+      "main": "src/interaction_manager/src/lib.rs",
+      "candid": "src/interaction_manager/interaction_manager.did"
+    },
+    "hihi_frontend": {
+      "type": "assets",
+      "source": ["src/hihi_frontend/dist"]
+    },
+    "internet_identity": {
+      "candid": "https://github.com/dfinity/internet-identity/releases/latest/download/internet_identity.did",
+      "frontend": {},
+      "remote": {
+        "id": {
+          "ic": "rdmx6-jaaaa-aaaaa-aaadq-cai"
+        }
+      },
+      "type": "custom",
+      "wasm": "https://github.com/dfinity/internet-identity/releases/latest/download/internet_identity_dev.wasm.gz"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
