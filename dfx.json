@@ -26,7 +26,7 @@
     },
     "hihi_frontend": {
       "type": "assets",
-      "source": ["src/hihi_frontend/dist"]
+      "source": ["src/social_frontend/dist"]
     },
     "internet_identity": {
       "candid": "https://github.com/dfinity/internet-identity/releases/latest/download/internet_identity.did",
